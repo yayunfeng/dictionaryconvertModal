@@ -10,8 +10,9 @@
 
 
 @implementation Person
+//方法名称不能乱写哦
 
-+ (NSDictionary *)objectClassInArray{
++ (NSDictionary *)arrayContainModelClass{
     return @{@"woman" : @"Woman"};
 }
 @end

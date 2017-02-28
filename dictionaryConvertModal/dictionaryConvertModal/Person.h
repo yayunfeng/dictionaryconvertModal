@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "Man.h"
 #import "Woman.h"
-
-@interface Person : NSObject
+#import "NSObject+Item.h"
+@interface Person : NSObject<ModelDelegate>
 
 @property (nonatomic, copy) NSString *name;
 
@@ -22,5 +22,4 @@
 
 @property (nonatomic, strong) NSArray<Woman *> *woman;
 
-+ (NSDictionary *)objectClassInArray;
 @end

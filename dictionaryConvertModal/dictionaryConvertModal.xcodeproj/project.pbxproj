@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9833B0661E653E8B00E7D9C1 /* Woman.m in Sources */ = {isa = PBXBuildFile; fileRef = 9833B0651E653E8B00E7D9C1 /* Woman.m */; };
+		9833B0691E65525C00E7D9C1 /* NSObject+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 9833B0681E65525C00E7D9C1 /* NSObject+Item.m */; };
 		98EA0C8F1E63F45D00052FA4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA0C8E1E63F45D00052FA4 /* main.m */; };
 		98EA0C921E63F45D00052FA4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA0C911E63F45D00052FA4 /* AppDelegate.m */; };
 		98EA0C951E63F45D00052FA4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98EA0C941E63F45D00052FA4 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		9833B0641E653E8B00E7D9C1 /* Woman.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Woman.h; sourceTree = "<group>"; };
 		9833B0651E653E8B00E7D9C1 /* Woman.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Woman.m; sourceTree = "<group>"; };
+		9833B0671E65525C00E7D9C1 /* NSObject+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Item.h"; sourceTree = "<group>"; };
+		9833B0681E65525C00E7D9C1 /* NSObject+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Item.m"; sourceTree = "<group>"; };
 		98EA0C8A1E63F45D00052FA4 /* dictionaryConvertModal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dictionaryConvertModal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98EA0C8E1E63F45D00052FA4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		98EA0C901E63F45D00052FA4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +85,8 @@
 				9833B0651E653E8B00E7D9C1 /* Woman.m */,
 				98EA0CA41E63F53B00052FA4 /* NSObject+Modal.h */,
 				98EA0CA51E63F53B00052FA4 /* NSObject+Modal.m */,
+				9833B0671E65525C00E7D9C1 /* NSObject+Item.h */,
+				9833B0681E65525C00E7D9C1 /* NSObject+Item.m */,
 				98EA0C961E63F45D00052FA4 /* Main.storyboard */,
 				98EA0C991E63F45D00052FA4 /* Assets.xcassets */,
 				98EA0C9B1E63F45D00052FA4 /* LaunchScreen.storyboard */,
@@ -174,6 +179,7 @@
 				98EA0C951E63F45D00052FA4 /* ViewController.m in Sources */,
 				98EA0C921E63F45D00052FA4 /* AppDelegate.m in Sources */,
 				98EA0CAB1E63F5B600052FA4 /* Person.m in Sources */,
+				9833B0691E65525C00E7D9C1 /* NSObject+Item.m in Sources */,
 				98EA0C8F1E63F45D00052FA4 /* main.m in Sources */,
 				9833B0661E653E8B00E7D9C1 /* Woman.m in Sources */,
 				98EA0CA61E63F53B00052FA4 /* NSObject+Modal.m in Sources */,
@@ -296,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = dictionaryConvertModal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wisorg.dictionaryConvertModal;
@@ -307,6 +314,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = dictionaryConvertModal/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wisorg.dictionaryConvertModal;

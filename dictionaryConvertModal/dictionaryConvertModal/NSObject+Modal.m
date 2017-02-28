@@ -7,7 +7,7 @@
 //
 #import "NSObject+Modal.h"
 #import <objc/message.h>
-#import "Person.h"
+#import "NSObject+Item.h"
 @implementation NSObject (Modal)
 
 /*
@@ -39,14 +39,15 @@
               //根据成员变量的类型的类去变成对应类型一个类的对象
             value = [NSClassFromString(ivarType) itemWithDic:value];
       }
-             // 如果value是数组类型
+             // 三级转换
         if ([value isKindOfClass:[NSArray class]]) {
             // 判断对应类有没有实现字典数组转模型数组的协议
-            if ([self respondsToSelector:@selector(objectClassInArray)]) {
+            if ([self respondsToSelector:@selector(arrayContainModelClass)]) {
                 // 转换成id类型，就能调用任何对象的方法
                 id idSelf = self;
                 // 获取数组中字典对应的模型
-                NSString *type =  [idSelf objectClassInArray][key];
+                
+                NSString *type =  [idSelf arrayContainModelClass][key];
                 // 生成模型
                 Class classModel = NSClassFromString(type);
                 NSMutableArray *arrM = [NSMutableArray array];
